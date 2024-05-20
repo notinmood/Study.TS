@@ -27,4 +27,3 @@ export class Bar {
 //定义类型实例并使用
 const bar = new Bar("qingdao");
 console.log(bar.getName());
-

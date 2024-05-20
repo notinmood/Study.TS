@@ -8,8 +8,7 @@
  */
 
 export class Foo {
-    constructor(private _name: string) {
-    }
+    constructor(private _name: string) {}
 
     get name() {
         return this._name;

@@ -5,9 +5,9 @@
  * @LastEditors  : Shandong Xiedali
  * @LastEditTime : 2022-04-11 20:58:20
  * @FilePath     : ICanEat.ts
- * @Description  : 
- * Copyright (c) 2022 by Hiland & RainyTop, All Rights Reserved. 
+ * @Description  :
+ * Copyright (c) 2022 by Hiland & RainyTop, All Rights Reserved.
  */
 export interface ICanEat {
-  eat(): void;
+    eat(): void;
 }

@@ -3,6 +3,7 @@
 // |::一一·|  命名空间和命名空间内的标的信息（比如本例的类型 Employee）都要export，否则Client代码找不到这些信息。
 // +--------------------------------------------------------------------------
 
+// eslint-disable-next-line @typescript-eslint/no-namespace
 export namespace TSS._res {
     export class Employee {
         name: string;

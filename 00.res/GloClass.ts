@@ -13,8 +13,9 @@
  * 所以不推荐使用 全局级别 的标的信息，其不仅会污染 全局空间，同时依然还需要 import。
  */
 
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 class GloClass {
-    sayHi: (string) => void = (name) => {
+    sayHi: (arg0: string) => void = (name) => {
         return `hello,${name}`;
-    }
+    };
 }

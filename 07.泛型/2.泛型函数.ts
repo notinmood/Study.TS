@@ -14,15 +14,15 @@ function returnArgA<T>(arg: T): T {
     return arg;
 }
 
-let returnArgB = <T>(arg: T): T => {
+const returnArgB = <T>(arg: T): T => {
     return arg;
 }
 
-let returnArgC: <T>(arg: T) => T = function (arg) {
+const returnArgC: <T>(arg: T) => T = function (arg) {
     return arg;
 }
 
-let returnArgD: <T>(arg: T) => T = (arg) => {
+const returnArgD: <T>(arg: T) => T = (arg) => {
     return arg;
 }
 
@@ -43,10 +43,12 @@ console.log(_b);
 console.log(_d);
 
 //──作为对比，以下是非泛型普通的函数──────────────────
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 function doSomethingA(arg: string): string {
     return arg;
 }
 
-let doSomethingB = (arg: string): string => {
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+const doSomethingB = (arg: string): string => {
     return arg;
 }

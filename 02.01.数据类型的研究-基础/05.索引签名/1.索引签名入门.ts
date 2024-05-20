@@ -7,6 +7,7 @@
  * @company: HiLand & RainyTop
  */
 
+// eslint-disable-next-line @typescript-eslint/no-namespace
 export namespace MyNameSpace {
     //══ 1. 简单的索引签名════════════════════════
     const foo: {
