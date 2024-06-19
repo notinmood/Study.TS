@@ -7,6 +7,6 @@
  * @company: HiLand & RainyTop
  */
 
-export default function (input:number) {
-    return input*2;
+export default function (input: number) {
+    return input * 2;
 }

@@ -10,7 +10,7 @@
  */
 
 // eslint-disable-next-line prettier/prettier
-import {ICanEat} from "./ICanEat";
+import { ICanEat } from "./ICanEat";
 import { ICanTalk } from "./ICanTalk";
 
 export class Human implements ICanEat, ICanTalk {

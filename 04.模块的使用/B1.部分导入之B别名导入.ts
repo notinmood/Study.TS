@@ -7,12 +7,6 @@
  * @company: HiLand & RainyTop
  */
 
-import {someVar as localName} from "./A1.直接导出";
+import { someVar as localName } from "./A1.直接导出";
 
 console.log(localName);
-
-
-
-
-
-

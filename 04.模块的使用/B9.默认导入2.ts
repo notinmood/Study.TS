@@ -13,6 +13,5 @@
 // +--------------------------------------------------------------------------
 import anyNameYouWant from "./A9.默认导出2";
 
-let result = anyNameYouWant(3);
+const result = anyNameYouWant(3);
 console.log(result);
-

@@ -7,12 +7,9 @@
  * @company: HiLand & RainyTop
  */
 
-import {someVar, someType} from "./A1.直接导出";
+import { someVar, someType } from "./A1.直接导出";
 
 console.log(someVar);
 
-
-
-
-
-
+const aa: someType = { foo: "bar" };
+console.log(aa);
