@@ -13,4 +13,3 @@
 // 更多参考 https://jkchao.github.io/typescript-book-chinese/typings/types.html#%E4%BD%BF%E7%94%A8-types
 
 // jQuery("#myDiv");
-

@@ -8,9 +8,6 @@
         <item url="file://$PROJECT_DIR$/04.模块的使用/00.export和export default在被导入时的区别-1.导出2.js" />
         <item url="file://$PROJECT_DIR$/04.模块的使用/00.export和export default在被导入时的区别-2.导入.js" />
         <item url="file://$PROJECT_DIR$/04.模块的使用/01.export导出对比-分别导出1.js" />
-        <item url="file://$PROJECT_DIR$/04.模块的使用/01.export导出对比-导入验证.js" />
-        <item url="file://$PROJECT_DIR$/04.模块的使用/01.export导出对比-统一导出1.js" />
-        <item url="file://$PROJECT_DIR$/04.模块的使用/01.export导出对比-统一导出2.js" />
       </sourceFilesUrls>
     </properties>
     <CLASSES>
@@ -19,10 +16,10 @@
       <root url="file://$PROJECT_DIR$/04.模块的使用/00.export和export default在被导入时的区别-1.导出1.js" />
       <root url="file://$PROJECT_DIR$/04.模块的使用/00.export和export default在被导入时的区别-1.导出2.js" />
       <root url="file://$PROJECT_DIR$/04.模块的使用/00.export和export default在被导入时的区别-2.导入.js" />
-      <root url="file://$PROJECT_DIR$/04.模块的使用/01.export导出对比-分别导出1.js" />
-      <root url="file://$PROJECT_DIR$/04.模块的使用/01.export导出对比-2导入验证.js" />
       <root url="file://$PROJECT_DIR$/04.模块的使用/01.export导出对比-1统一导出1.js" />
       <root url="file://$PROJECT_DIR$/04.模块的使用/01.export导出对比-1统一导出2.js" />
+      <root url="file://$PROJECT_DIR$/04.模块的使用/01.export导出对比-2导入验证.js" />
+      <root url="file://$PROJECT_DIR$/04.模块的使用/01.export导出对比-分别导出1.js" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />
