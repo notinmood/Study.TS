@@ -7,7 +7,7 @@
  * @company: HiLand & RainyTop
  */
 
-let myFunc = (maybeString: string | undefined | null) => {
+const myFunc = (maybeString: string | undefined | null) => {
     // 本句将一个有可能有 null 或者 undefined 的值赋给 string类型的常量，是无法编译通过的。
     // const onlyString: string = maybeString; // Error
 
@@ -20,18 +20,17 @@ let myFunc = (maybeString: string | undefined | null) => {
     }
 
     console.log(ignoreUndefinedAndNull);
-}
+};
 
-let myFunc2 = (onlyString?: string) => {
+const myFunc2 = (onlyString?: string) => {
     const a: string = onlyString!;
-}
+};
 
-myFunc('jerry');
-console.log('─────────────────────────────────────');
+myFunc("jerry");
+console.log("─────────────────────────────────────");
 myFunc(undefined);
-console.log('══════════════════════════');
+console.log("══════════════════════════");
 myFunc(null);
 
 myFunc2(undefined);
 // myFunc2(null);
-

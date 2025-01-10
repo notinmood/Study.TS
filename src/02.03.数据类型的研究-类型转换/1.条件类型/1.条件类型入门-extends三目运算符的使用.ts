@@ -16,8 +16,8 @@ export namespace myNS {
         woof(): void;
     }
 
-    type Example1 = Dog extends Animal ? number : string;// type Example1 = number
-    type Example2 = RegExp extends Animal ? number : string;//type Example2= string
+    type Example1 = Dog extends Animal ? number : string; // type Example1 = number
+    type Example2 = RegExp extends Animal ? number : string; //type Example2= string
 
     const _name1: Example1 = 123;
     const _name2: Example2 = "qingdao";

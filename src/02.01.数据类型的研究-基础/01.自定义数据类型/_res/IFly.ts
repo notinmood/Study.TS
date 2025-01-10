@@ -1,4 +1,3 @@
-
 export interface IFly {
-    fly():void;
+    fly(): void;
 }

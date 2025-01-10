@@ -14,7 +14,7 @@
 // +--------------------------------------------------------------------------
 
 // 以下两种声明是一样。
-declare let wQuery: (selector: string) => any;
+declare let wQuery: (selector: string) => never;
 // declare function wQuery(selector: string): any;
 
 wQuery("#foo");

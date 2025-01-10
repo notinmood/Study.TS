@@ -14,23 +14,25 @@ export namespace MyNameSpace {
         age: number;
     }
 
-    const sem: Human = {name: "zhangsan", age: 30}
+    const sem: Human = { name: "zhangsan", age: 30 };
     type Sem = typeof sem; // type Sem = Human
-    const li: Sem = {name: "lisi", age: 20};
+    const li: Sem = { name: "lisi", age: 20 };
     console.log(li);
 
-    console.log('--typeof someVar 可以赋值给 type 的变量然后再定义变量使用；但不能打印，打印出来就只显示 object 了。--');
+    console.log(
+        "--typeof someVar 可以赋值给 type 的变量然后再定义变量使用；但不能打印，打印出来就只显示 object 了。--",
+    );
     console.log(typeof sem); //object
 
     //2. 字面量实例
     const someObject = {
         obj: {
-            one: 1
+            one: 1,
         },
         arr: [1, 2, 4],
-        num: 1
-    }
-    type myType = typeof someObject
+        num: 1,
+    };
+    type myType = typeof someObject;
     //{
     // obj: {
     // one: number;
@@ -41,5 +43,5 @@ export namespace MyNameSpace {
 
     // 但打印出来，就是 object
     console.log("但打印出来，就是 object");
-    console.log(typeof someObject);//object
+    console.log(typeof someObject); //object
 }

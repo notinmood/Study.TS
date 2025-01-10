@@ -23,12 +23,11 @@ const temp = myObject[Symbol.iterator]();
 console.log(temp);
 
 const nextNode = temp.next();
-console.log(typeof nextNode);   //object
-console.log(nextNode);          //{ value: 1, done: false }
-console.log(nextNode.value);    //1
+console.log(typeof nextNode); //object
+console.log(nextNode); //{ value: 1, done: false }
+console.log(nextNode.value); //1
 
-console.log(temp.next());       //{ value: 2, done: false }
-
+console.log(temp.next()); //{ value: 2, done: false }
 
 // // 以下代码会报错
 
@@ -36,8 +35,7 @@ console.log(temp.next());       //{ value: 2, done: false }
 //     console.log(myObjectElement);
 // }
 
-console.log('─────────────────────────────────────');
+console.log("─────────────────────────────────────");
 for (const myObjectKey in myObject) {
     console.log(`-- ${myObjectKey} 对应的值为 ${myObject[myObjectKey]}`);
 }
-

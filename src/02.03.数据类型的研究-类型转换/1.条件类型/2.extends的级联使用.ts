@@ -8,19 +8,23 @@
  */
 
 export namespace MY {
-    type TypeName<T> =
-            T extends string ? string :
-                    T extends number ? number :
-                            T extends boolean ? boolean :
-                                    T extends undefined ? undefined :
-                                            T extends Function ? Function :
-                                                    object;
+    type TypeName<T> = T extends string
+        ? string
+        : T extends number
+          ? number
+          : T extends boolean
+            ? boolean
+            : T extends undefined
+              ? undefined
+              : T extends Function
+                ? Function
+                : object;
 
-    type T0 = TypeName<string>;  // string
-    type T1 = TypeName<"a">;  // string
-    type T2 = TypeName<true>;  // boolean
-    type T3 = TypeName<() => void>;  // Function
-    type T4 = TypeName<string[]>;  // object
+    type T0 = TypeName<string>; // string
+    type T1 = TypeName<"a">; // string
+    type T2 = TypeName<true>; // boolean
+    type T3 = TypeName<() => void>; // Function
+    type T4 = TypeName<string[]>; // object
 
     const myString: T1 = "value";
     const myValue: T2 = true;

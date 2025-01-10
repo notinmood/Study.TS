@@ -7,11 +7,9 @@
  * @company: HiLand & RainyTop
  */
 
-
 /**
  * Partial<T>等类型都是 ES5 内部已经定义好的类型，此处只是演示其实现逻辑
  */
-
 
 export namespace MyNameSpace {
     /**
@@ -27,22 +25,23 @@ export namespace MyNameSpace {
     type Exclude<T, U> = T extends U ? never : T;
 
     type Readonly<T> = {
-        readonly [K in keyof T]: T[K]
-    }
+        readonly [K in keyof T]: T[K];
+    };
 
     type Pick<T, K extends keyof T> = {
-        [P in K]: T[P]
-    }
+        [P in K]: T[P];
+    };
 
     /**
      * Obtain the return type of function type
      */
-    type ReturnType<T extends (...args: any) => any> = T extends (...args: any) => infer R ? R : any
+    type ReturnType<T extends (...args: any) => any> = T extends (...args: any) => infer R ? R : any;
 
     // 获取构造函数参数类型
-    type ConstructorParameters<T extends new (...args: any[]) => any> = T extends new (...args: infer P) => any ? P : never;
+    type ConstructorParameters<T extends new (...args: any[]) => any> = T extends new (...args: infer P) => any
+        ? P
+        : never;
 
     // 获取返回实例类型
     type InstanceType<T extends new (...args: any[]) => any> = T extends new (...args: any[]) => infer R ? R : any;
-
 }

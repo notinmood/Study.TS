@@ -9,13 +9,13 @@
 
 export namespace MyNameSpace {
     interface User {
-        id: number
-        age: number
-        name: string
+        id: number;
+        age: number;
+        name: string;
     }
 
-    type Picked1 = Pick<User, 'id'>;//{id: number}
-    type Picked2 = Pick<User, "id" | "age">;//{id: number, age: number}
+    type Picked1 = Pick<User, "id">; //{id: number}
+    type Picked2 = Pick<User, "id" | "age">; //{id: number, age: number}
 
     // 以下代码无法编译通过，因为 city 不是 User 的成员
     // type Picked3 = Pick<User, "id" | "city">;

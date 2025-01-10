@@ -13,7 +13,7 @@ export namespace MyNameSpace {
     type Flatten<T> = T extends any[] ? T[number] : T;
 
     // Extracts out the element type.
-    type myType1 = Flatten<string[]>;//string
-    type myType2 = Flatten<boolean[]>;//boolean
-    type myType3 = Flatten<number>;//number
+    type myType1 = Flatten<string[]>; //string
+    type myType2 = Flatten<boolean[]>; //boolean
+    type myType3 = Flatten<number>; //number
 }

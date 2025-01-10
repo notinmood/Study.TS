@@ -14,21 +14,21 @@
 export namespace MyNameSpace {
     class Bird {
         fly() {
-            console.log('Bird flying');
+            console.log("Bird flying");
         }
 
         layEggs() {
-            console.log('Bird layEggs');
+            console.log("Bird layEggs");
         }
     }
 
     class Fish {
         swim() {
-            console.log('Fish swimming');
+            console.log("Fish swimming");
         }
 
         layEggs() {
-            console.log('Fish layEggs');
+            console.log("Fish layEggs");
         }
     }
 
@@ -56,7 +56,7 @@ export namespace MyNameSpace {
         //3. 使用 is 进行类型判断
         function isBird(bird: Bird | Fish): bird is Bird {
             //if (bird is Bird){}//本行代码说明 is 不能在 if 语句中进行判定
-            return !!(bird as Bird).fly
+            return !!(bird as Bird).fly;
         }
 
         if (isBird(pet)) {

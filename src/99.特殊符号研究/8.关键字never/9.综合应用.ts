@@ -27,6 +27,6 @@ export namespace MyNameSpace {
     }
 
     type EmailMessageContents = MessageOf<Email>; //string
-    type DogMessageContents = MessageOf<Dog>;//never
-    type PokeMessageContents = MessageOf<Poke>;//number
+    type DogMessageContents = MessageOf<Dog>; //never
+    type PokeMessageContents = MessageOf<Poke>; //number
 }

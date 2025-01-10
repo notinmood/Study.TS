@@ -16,20 +16,20 @@ export namespace MyNameSpace {
     }
 
     const successful: NestedCSS = {
-        color: 'red',
-        nest : {
-            '.subclass': {
-                color: 'blue'
-            }
-        }
-    }
+        color: "red",
+        nest: {
+            ".subclass": {
+                color: "blue",
+            },
+        },
+    };
 
     const fails: NestedCSS = {
-        color: 'red',
+        color: "red",
         /**
          * 以下代码会报错
          * TS Error: 未知属性 'colour'
          */
         // colour: 'red',
-    }
+    };
 }

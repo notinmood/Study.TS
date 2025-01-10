@@ -17,5 +17,5 @@ class MyClassA {
 
 const ca = new MyClassA();
 console.log(ca.a); //aa
-console.log(ca['a']);//aa
-console.log(ca['c']);//undefined
+console.log(ca["a"]); //aa
+console.log(ca["c"]); //undefined

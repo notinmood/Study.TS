@@ -6,9 +6,9 @@
  * @creator: ShanDong Xiedali
  * @company: HiLand & RainyTop
  */
-import {Human}   from '../00.res/Human';
-import {Worker}  from '../00.res/Worker';
-import {Student} from "../00.res/Student";
+import { Human } from "../00.res/Human";
+import { Worker } from "../00.res/Worker";
+import { Student } from "../00.res/Student";
 
 const w = new Worker("zhangsan", "IT Engineer");
 

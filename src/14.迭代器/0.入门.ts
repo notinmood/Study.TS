@@ -7,7 +7,7 @@
  * @company: HiLand & RainyTop
  */
 
-let str: string = 'Hi'
-console.log(typeof str[Symbol.iterator]) // function
-console.log(str[Symbol.iterator]().next()) // { value: 'H', done: false }
-console.log(str[Symbol.iterator]().next().value) // H
+const str: string = "Hi";
+console.log(typeof str[Symbol.iterator]); // function
+console.log(str[Symbol.iterator]().next()); // { value: 'H', done: false }
+console.log(str[Symbol.iterator]().next().value); // H

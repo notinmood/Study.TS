@@ -26,7 +26,7 @@ export namespace MyNameSpace {
     type Ikea = keyof IProps; // Ikea = 'name' | 'count'
 
     function testKeyof(props: Ikea): void {
-        let _length = props.length;
+        const _length = props.length;
         console.log(`长度为 ${_length}`);
     }
 

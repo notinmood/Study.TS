@@ -7,6 +7,4 @@
  * @company: HiLand & RainyTop
  */
 
-export namespace MyNameSpace {
-
-}
+export namespace MyNameSpace {}

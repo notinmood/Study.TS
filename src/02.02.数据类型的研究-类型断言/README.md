@@ -1,6 +1,7 @@
 # 说明
 
 1. TypeScript内的类型断言 TypeAssertions，有两种方法：
+
     1. `<targetType>xx`
     2. `xx as targetType`
 

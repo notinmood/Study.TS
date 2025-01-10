@@ -8,5 +8,5 @@
  */
 
 export namespace MyNameSpace {
-    type T00 = Exclude<'a' | 'b' | 'c' | 'd', 'a' | 'c' | 'f'>  // 'b' | 'd'
+    type T00 = Exclude<"a" | "b" | "c" | "d", "a" | "c" | "f">; // 'b' | 'd'
 }

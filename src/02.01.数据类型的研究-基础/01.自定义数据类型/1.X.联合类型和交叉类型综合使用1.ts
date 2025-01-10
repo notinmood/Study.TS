@@ -25,13 +25,13 @@ export namespace MyNameSpace {
     // |::说明·| 2. 定义两个类型的变量
     // +--------------------------------------------------------------------------
     let ant: Ant = {
-        name  : '蚂蚁呀嘿',
+        name: "蚂蚁呀嘿",
         weight: 0.2,
     };
 
     let flyer: Fly = {
         flyHeight: 20,
-        speed    : 1,
+        speed: 1,
     };
 
     // +--------------------------------------------------------------------------
@@ -41,14 +41,14 @@ export namespace MyNameSpace {
 
     // 少了任何一个属性都会报错
     flyAndAnt = {
-        name     : '蚂蚁呀嘿',
-        weight   : 0.2,
+        name: "蚂蚁呀嘿",
+        weight: 0.2,
         flyHeight: 20,
-        speed    : 1,
+        speed: 1,
     };
 
     // 也可以使用分解式语法
-    flyAndAnt = {...ant, ...flyer};
+    flyAndAnt = { ...ant, ...flyer };
 
     // +--------------------------------------------------------------------------
     // |::说明·| 4. 定义联合类型的实例。
@@ -57,7 +57,7 @@ export namespace MyNameSpace {
 
     // 4.1.联合类型 Ant|Fly 的实例可以是 Ant 的实例也可以是 Fly 的实例。
     flyOrAnt = {
-        name  : '蚂蚁呀嘿',
+        name: "蚂蚁呀嘿",
         weight: 0.2,
     };
 
@@ -67,7 +67,7 @@ export namespace MyNameSpace {
     // 4.3.联合类型 Ant|Fly 的实例可以是 Ant 的实例也可以是 Fly 的实例。
     flyOrAnt = {
         flyHeight: 20,
-        speed    : 1,
+        speed: 1,
     };
 
     // 4.4.联合类型 Ant|Fly 的实例可以是 Ant 的实例也可以是 Fly 的实例。
@@ -75,22 +75,22 @@ export namespace MyNameSpace {
 
     // 4.5.联合类型 Ant|Fly 的实例可以是 Ant 的实例也可以是 Fly 的实例。
     flyOrAnt = {
-        name     : '蚂蚁呀嘿',
-        weight   : 0.2,
+        name: "蚂蚁呀嘿",
+        weight: 0.2,
         flyHeight: 20,
-        speed    : 1,
+        speed: 1,
     };
 
     // 4.6.联合类型 Ant|Fly 的实例可以是 Ant 的实例也可以是 Fly 的实例。
-    flyOrAnt = {...ant, ...flyer};
+    flyOrAnt = { ...ant, ...flyer };
 
     // +--------------------------------------------------------------------------
     // |::说明·| 5. 兼容判断
     // +--------------------------------------------------------------------------
     // 5.1 以下演示 可以把 “初始类型” Fly、Ant或者交叉类型 Fly&Ant 的变量赋值给 联合类型的变量
-    flyOrAnt = flyer;    //Fly 类型的变量可以赋值给 Fly|Ant 类型的变量
-    flyOrAnt = ant;      //Ant 类型的变量可以赋值给 Fly|Ant 类型的变量
-    flyOrAnt = flyAndAnt;   //Fly&Ant 类型的变量可以赋值给 Fly|Ant 类型的变量
+    flyOrAnt = flyer; //Fly 类型的变量可以赋值给 Fly|Ant 类型的变量
+    flyOrAnt = ant; //Ant 类型的变量可以赋值给 Fly|Ant 类型的变量
+    flyOrAnt = flyAndAnt; //Fly&Ant 类型的变量可以赋值给 Fly|Ant 类型的变量
 
     // 5.2 以下演示 可以把 交叉类型 Fly&Ant 的变量赋值给 “初始类型” Fly、Ant 类型的变量
     flyer = flyAndAnt;

@@ -18,10 +18,8 @@ export namespace MyNameSpace {
     }
 
     console.log(MyColor.Yellow); // 2
-    console.log(MyColor['Yellow']);// 2
-    console.log(MyColor[2]);// Yellow
-
-
+    console.log(MyColor["Yellow"]); // 2
+    console.log(MyColor[2]); // Yellow
 
     /**
      * 以下是编译后形成的 JavaScript 文件
@@ -42,8 +40,8 @@ export namespace MyNameSpace {
     enum Direction {
         NORTH = "NORTH",
         SOUTH = "SOUTH",
-        EAST  = "EAST",
-        WEST  = "WEST",
+        EAST = "EAST",
+        WEST = "WEST",
     }
 
     /**
@@ -57,4 +55,3 @@ export namespace MyNameSpace {
     //     Direction["WEST"] = "WEST";
     // })(Direction || (Direction = {}));
 }
-

@@ -16,15 +16,15 @@ function returnArgA<T>(arg: T): T {
 
 const returnArgB = <T>(arg: T): T => {
     return arg;
-}
+};
 
 const returnArgC: <T>(arg: T) => T = function (arg) {
     return arg;
-}
+};
 
 const returnArgD: <T>(arg: T) => T = (arg) => {
     return arg;
-}
+};
 
 const _a = returnArgA("qingdao");
 const _b = returnArgB(123);
@@ -38,7 +38,7 @@ console.log(_d);
 
 //以下纯粹演示 number类型在输出到时候显示为 “黄色”字体；
 // 字符串显示为 白色字体
-console.log('******* number类型显示为黄色；字符串类型显示为白色。*******');
+console.log("******* number类型显示为黄色；字符串类型显示为白色。*******");
 console.log(_b);
 console.log(_d);
 
@@ -51,4 +51,4 @@ function doSomethingA(arg: string): string {
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 const doSomethingB = (arg: string): string => {
     return arg;
-}
+};

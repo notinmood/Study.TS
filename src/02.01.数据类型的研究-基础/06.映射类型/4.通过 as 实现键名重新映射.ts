@@ -22,4 +22,3 @@ export namespace MyNameSpace {
     type LazyPerson = Getters<Person>;
     //{getName: () => Person["name"], getAge: () => Person["age"], getLocation: () => Person["location"]}
 }
-

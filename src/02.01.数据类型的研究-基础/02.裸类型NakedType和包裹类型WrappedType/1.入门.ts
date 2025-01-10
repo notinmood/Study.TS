@@ -7,10 +7,9 @@
  * @company: HiLand & RainyTop
  */
 
-
 // 裸类型参数,没有被任何其他类型包裹，即T。
 // 裸类型的是对每个值单独判断，然后返回（用|连接的）联合的结果。
-type NakedType<T> = T extends boolean ? "YES" : "NO"
+type NakedType<T> = T extends boolean ? "YES" : "NO";
 // 类型参数被包裹的在元组内，即[T]
 // 包装类型，对元组（或数组）容器内的每个元素统一判断，必须所有的元素都满足才行。
 // 本例中，如果元组内的每个元素都是boolean，那么才返回 "YES。有一个不能确定，就返回 "NO"

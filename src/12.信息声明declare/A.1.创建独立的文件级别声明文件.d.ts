@@ -11,5 +11,3 @@ export declare class eClass {
     id: string;
     talk: (name) => void;
 }
-
-

@@ -7,21 +7,18 @@
  * @company: HiLand & RainyTop
  */
 
-let o = {
+const o = {
     a: "foo",
     b: 12,
-    c: "bar"
+    c: "bar",
 };
 
 // @ts-ignore
-let {a, b} = o;//从o中解构出a,b
+let { a, b } = o; //从o中解构出a,b
 console.log(a);
 console.log(b);
 
-
-// @ts-ignore
-let {a, ...rest2} = o;
+//@ts-expect-error
+let { a, ...rest2 } = o;
 console.log(a);
 console.log(rest2);
-
-

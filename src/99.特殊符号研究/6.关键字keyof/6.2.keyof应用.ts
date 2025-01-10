@@ -9,14 +9,13 @@
 
 export namespace MyNameSpace {
     interface Human {
-        name: string,
-        age: number,
-        gender: boolean,
+        name: string;
+        age: number;
+        gender: boolean;
     }
 
     class Service {
-        constructor(private person: Human) {
-        }
+        constructor(private person: Human) {}
 
         getPersonData1(fieldName: string) {
             return this.person[fieldName];
@@ -28,8 +27,8 @@ export namespace MyNameSpace {
     }
 
     const zhangsan: Human = {
-        name  : "zhangsan",
-        age   : 20,
+        name: "zhangsan",
+        age: 20,
         gender: true,
     };
 

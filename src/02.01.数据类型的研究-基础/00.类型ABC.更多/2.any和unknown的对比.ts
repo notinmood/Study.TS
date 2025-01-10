@@ -16,10 +16,9 @@ export namespace MyNameSpace {
     let anyValue: any;
     let unknownValue: unknown;
 
-
-    let boolValue: boolean = true;
-    let numValue: number = 43;
-    let strValue: string = "Hello world";
+    const boolValue: boolean = true;
+    const numValue: number = 43;
+    const strValue: string = "Hello world";
 
     // 1. 任何类型都可以赋值给这两个类型的变量
     anyValue = numValue;

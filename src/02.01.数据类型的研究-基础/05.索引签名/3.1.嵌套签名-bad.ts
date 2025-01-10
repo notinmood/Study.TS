@@ -15,13 +15,13 @@ export namespace MyNameSpace {
     }
 
     const example: NestedCSS = {
-        color      : 'red',
-        '.subclass': {
-            color: 'blue'
-        }
+        color: "red",
+        ".subclass": {
+            color: "blue",
+        },
     };
 
     const failsSilently: NestedCSS = {
-        colour: 'red', // 'colour' 不会被捕捉到错误
+        colour: "red", // 'colour' 不会被捕捉到错误
     };
 }

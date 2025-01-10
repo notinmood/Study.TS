@@ -5,13 +5,12 @@
 export namespace MyNameSpace {
     // 方法1. 直接使用 | 为变量定义两个可选的类型。
     let value00: number | string;
-    value00 = 'value';
+    value00 = "value";
     value00 = 123;
 
-
-// 方法2. 使用 type 先明确声明一个自定义类型（其实不是新类型，就是联合类型的别名），然后再用这个自定义类型定义变量。
+    // 方法2. 使用 type 先明确声明一个自定义类型（其实不是新类型，就是联合类型的别名），然后再用这个自定义类型定义变量。
     type typeAA = number | string;
     let valueAA: typeAA;
-    valueAA = 'value';
+    valueAA = "value";
     valueAA = 123;
 }

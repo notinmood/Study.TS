@@ -7,7 +7,7 @@
  * @company: HiLand & RainyTop
  */
 
-export const myObject = {a: "AA", b: 123, c: true};
+export const myObject = { a: "AA", b: 123, c: true };
 
 // // 以下代码会报错
 // for (const myObjectElement of myObject) {
@@ -17,4 +17,3 @@ export const myObject = {a: "AA", b: 123, c: true};
 for (const myObjectKey in myObject) {
     console.log(`-- ${myObjectKey} 对应的值为 ${myObject[myObjectKey]}`);
 }
-

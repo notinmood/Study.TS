@@ -9,11 +9,11 @@
 
 export namespace MY {
     interface IdLabel {
-        id: number; /* some fields */
+        id: number /* some fields */;
     }
 
     interface NameLabel {
-        name: string; /* other fields */
+        name: string /* other fields */;
     }
 
     type NameOrId<T extends number | string> = T extends number ? IdLabel : NameLabel;
@@ -22,12 +22,12 @@ export namespace MY {
         throw "unimplemented";
     }
 
-    let a = createLabel("typescript");
+    const a = createLabel("typescript");
     //   let a: NameLabel
 
-    let b = createLabel(2.8);
+    const b = createLabel(2.8);
     //   let b: IdLabel
 
-    let c = createLabel(Math.random() ? "hello" : 42);
+    const c = createLabel(Math.random() ? "hello" : 42);
     //   let c: NameLabel | IdLabel
 }

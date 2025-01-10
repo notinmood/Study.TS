@@ -6,7 +6,7 @@
  * @creator: ShanDong Xiedali
  * @company: HiLand & RainyTop
  */
-import {Human} from "./Human";
+import { Human } from "./Human";
 
 export class Student extends Human {
     study(): void {

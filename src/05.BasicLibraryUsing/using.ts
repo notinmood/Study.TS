@@ -9,8 +9,7 @@
  * Copyright (c) 2022 by Hiland & RainyTop, All Rights Reserved.
  */
 
-
 import * as bl from "basiclibrary.ts/lib/index";
 
-const myValue= bl.ObjectHelper.combine({a: true}, {b: 123});
+const myValue = bl.ObjectHelper.combine({ a: true }, { b: 123 });
 console.log(myValue);

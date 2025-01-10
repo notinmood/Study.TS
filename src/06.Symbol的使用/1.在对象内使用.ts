@@ -4,9 +4,9 @@
 
 const sym = Symbol();
 
-export let obj = {
+export const obj = {
     [sym]: "value",
-    xx   : "abc",
+    xx: "abc",
 };
 
 console.log(obj[sym]); // "value"

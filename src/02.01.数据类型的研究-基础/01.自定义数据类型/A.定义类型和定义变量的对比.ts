@@ -16,7 +16,7 @@ export namespace MyNameSpace {
     type myType = (string, number) => string;
     const myFunc1: myType = (x: string, y: number): string => {
         return `hello,${x} ${y.toString()}`;
-    }
+    };
 
     const result: string = myFunc1("qingdao", 1908);
     console.log(result);
@@ -24,6 +24,6 @@ export namespace MyNameSpace {
     //2. 直接定义函数和执行函数
     const myFunc2 = (input: string | number) => {
         return `输入的信息为${input.toString()}`;
-    }
+    };
     console.log(myFunc2(123));
 }

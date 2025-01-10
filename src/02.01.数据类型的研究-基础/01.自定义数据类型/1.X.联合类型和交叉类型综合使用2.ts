@@ -9,31 +9,31 @@
 
 export namespace MyNameSpace {
     type XPoint = {
-        myName: string,
+        myName: string;
 
-        xv: number,
-        id: number,
+        xv: number;
+        id: number;
     };
 
     type YPoint = {
-        myName: string,
+        myName: string;
 
-        yv: string,
-        code: string,
+        yv: string;
+        code: string;
     };
 
     type XNY = XPoint & YPoint;
     type XUY = XPoint | YPoint;
 
     const xPoint: XPoint = {
-        xv    : 123,
-        id    : 123,
+        xv: 123,
+        id: 123,
         myName: "i am x",
     };
 
     const yPoint: YPoint = {
-        yv    : "123",
-        code  : "qingdao",
+        yv: "123",
+        code: "qingdao",
         myName: "i am y",
     };
 
@@ -41,17 +41,17 @@ export namespace MyNameSpace {
     // 把 A 或者 B 的实例，都可以赋值给联合后的类型变量
     xuy = xPoint;
     xuy = yPoint;
-    xuy = {...xPoint, ...yPoint};
+    xuy = { ...xPoint, ...yPoint };
 
     let xny: XPoint & YPoint;
     // A 或者 B 的实例，都无法赋值给交叉后的类型变量
     // xny = xPoint;
     // xny = yPoint;
     // 只有同时包含了 A 和 B 类型的成员才能赋值给交叉类型的变量
-    xny = {...xPoint, ...yPoint};//...是解构语法
+    xny = { ...xPoint, ...yPoint }; //...是解构语法
 
-
-    function using交叉类型(p: XPoint & YPoint) {        //myName 可以正常访问
+    function using交叉类型(p: XPoint & YPoint) {
+        //myName 可以正常访问
         console.log(p.myName);
         console.log(p.id);
         console.log(p.code);

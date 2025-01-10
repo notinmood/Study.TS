@@ -15,19 +15,20 @@
 export namespace MyNameSpace {
     // 获取构造函数参数类型
     type ConstructorParameters<T extends new (...args: any[]) => any> = T extends new (...args: infer P) => any
-                                                                        ? P
-                                                                        : never;
+        ? P
+        : never;
 
     // 获取返回实例类型
     type InstanceType<T extends new (...args: any[]) => any> = T extends new (...args: any[]) => infer R ? R : any;
 
     class TestClass {
-        constructor(public name: string, public age: number) {
-        }
+        constructor(
+            public name: string,
+            public age: number,
+        ) {}
     }
 
     type Params = ConstructorParameters<typeof TestClass>; // [string, number]
 
     type Instance = InstanceType<typeof TestClass>; // TestClass
-
 }

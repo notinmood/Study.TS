@@ -21,4 +21,4 @@ declare namespace aQuery {
 }
 
 // src/index.ts
-aQuery.ajax('/api/get_something');
+aQuery.ajax("/api/get_something");

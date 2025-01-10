@@ -7,7 +7,6 @@
  * @company: HiLand & RainyTop
  */
 
-
 /**
  * infer 一般用于 T 为 function 的泛型中；
  * 用于延时推断函数的参数或者返回值的类型。
@@ -49,4 +48,3 @@ export namespace M {
     type result3 = ReturnType<Func3>; // number
     type result4 = ReturnType<Func4>; // number
 }
-

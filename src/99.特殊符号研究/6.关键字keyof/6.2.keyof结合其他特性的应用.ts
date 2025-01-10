@@ -11,16 +11,15 @@
 
 export namespace MyNameSpace {
     interface Human {
-        name: string,
-        age: number,
-        gender: boolean,
+        name: string;
+        age: number;
+        gender: boolean;
     }
 
     type fieldType = keyof Human;
 
     class Service {
-        constructor(private person: Human) {
-        }
+        constructor(private person: Human) {}
 
         // TODO:xiedali@2022/4/27 需要根据传入的参数，对返回值类型进行处理
         getPersonData<T>(fieldName: fieldType) {
@@ -29,8 +28,8 @@ export namespace MyNameSpace {
     }
 
     const zhangsan: Human = {
-        name  : "zhangsan",
-        age   : 20,
+        name: "zhangsan",
+        age: 20,
         gender: true,
     };
 

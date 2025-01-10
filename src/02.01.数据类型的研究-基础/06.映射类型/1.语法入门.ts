@@ -18,34 +18,33 @@
 export namespace MyNameSpace {
     const someData = {
         obj: {
-            one: 1
+            one: 1,
         },
-        num: 2
-    }
+        num: 2,
+    };
 
     /**
      * 使用类型映射语法定义新类型
      */
     type getType<T> = {
-        [K in keyof T]: T[K]
-    }
+        [K in keyof T]: T[K];
+    };
 
     // 1. 以下两种方式结果是相同的，第一种方式只是介绍 映射类型的使用方式
-    type instance1 = getType<typeof someData>;//{obj: {one: number}, num: number}
-    type instance2 = typeof someData;//{obj: {one: number}, num: number}
+    type instance1 = getType<typeof someData>; //{obj: {one: number}, num: number}
+    type instance2 = typeof someData; //{obj: {one: number}, num: number}
 
     /**
      * 但使用映射的方式，可以提前一步对类型进行约束
      */
     type getTypeGen<T extends { num: number }> = { [K in keyof T]: T[K] };
-    type instance3 = getTypeGen<typeof someData>;// {obj: {one: number}, num: number}
-
+    type instance3 = getTypeGen<typeof someData>; // {obj: {one: number}, num: number}
 
     // 2. 能够对 T[K] 作一些处理。
     //比如使用 extends 对类型进行判定和转换
     type getTypeX<T> = {
-        [K in keyof T]: T[K] extends object ? 1 : 0
-    }
+        [K in keyof T]: T[K] extends object ? 1 : 0;
+    };
     //object类型转换为字面量1，其余类型为0
-    type instanceX = getTypeX<typeof someData>//{obj: 1;num: 0;}
+    type instanceX = getTypeX<typeof someData>; //{obj: 1;num: 0;}
 }

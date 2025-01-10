@@ -10,10 +10,10 @@
 // +--------------------------------------------------------------------------
 // |::说明·| 泛型数组 Array<Number> 和 Number[] 是等效的。
 // +--------------------------------------------------------------------------
-let myNumberArray1: Array<Number> = [1, 2, 3, 5];
-let myNumberArray2: Number[] = [2, 4, 6];
+const myNumberArray1: Array<number> = [1, 2, 3, 5];
+const myNumberArray2: number[] = [2, 4, 6];
 
 // +--------------------------------------------------------------------------
 // |::说明·| 泛型内的类型也可以是 | 类型
 // +--------------------------------------------------------------------------
-let myGenericArray: Array<Number | string> = [1, "qingdao", 5];
+const myGenericArray: Array<number | string> = [1, "qingdao", 5];

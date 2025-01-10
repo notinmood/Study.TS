@@ -14,14 +14,14 @@
 export namespace MyNameSpace {
     const someData = {
         obj: {
-            one: 1
+            one: 1,
         },
         arr: [1, 2, 4],
-        num: 1
-    }
+        num: 1,
+    };
 
     type someType = typeof someData;
-    type firstType = someType["obj"];//{one: number}
-    type secondType = someType["num"];//number
-    type thirdType = someType["arr"];//number[]
+    type firstType = someType["obj"]; //{one: number}
+    type secondType = someType["num"]; //number
+    type thirdType = someType["arr"]; //number[]
 }

@@ -22,7 +22,7 @@ export namespace MyNameSpace {
     } = {};
 
     // 储存的东西必须符合结构
-    foo["a"] = {message: 'some message'};
+    foo["a"] = { message: "some message" };
     bar["age"] = 20;
 
     //══2.独立 type 定义的索引签名════════════════════════
@@ -31,19 +31,16 @@ export namespace MyNameSpace {
         name: "zhangsan",
     };
 
-
     let myTarget: myType;
     /**
      * 变量 myValue1 满足类型 myType 的签名，可以赋值给类型 myType 的变量 myTarget
      */
-    const myValue1 = {city: "lisi"};
+    const myValue1 = { city: "lisi" };
     myTarget = myValue1;
-
 
     /**
      * 变量 myValue2 不满足类型 myType 的签名，所以不可以赋值给类型 myType 的变量 myTarget
      */
-    const myValue2 = {age: 20};
+    const myValue2 = { age: 20 };
     // myTarget= myValue2;
 }
-

@@ -7,7 +7,7 @@
  * @company: HiLand & RainyTop
  */
 
-import {eClass} from "./A.1.创建独立的文件级别声明文件";
+import { eClass } from "./A.1.创建独立的文件级别声明文件";
 
 const e = new eClass();
 e.talk("zhangsan");

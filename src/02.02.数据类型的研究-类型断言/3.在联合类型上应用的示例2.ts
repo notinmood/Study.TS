@@ -47,19 +47,19 @@ function swim2(animal: Cat | Fish) {
     const _name = typeof (animal as Fish).swim;
     console.log(`swim的类型为${_name}`);
 
-    if('swim' in animal){
+    if ("swim" in animal) {
         console.log("1.有swim属性！");
-    }else{
+    } else {
         console.log("NN 1.没有swim属性！");
     }
 
-    if (typeof (animal as Fish).swim === 'function') {
+    if (typeof (animal as Fish).swim === "function") {
         console.log("2.有swim属性！");
     } else {
         console.log("NN 2.没有swim属性！");
     }
 
-    if (typeof (animal as Fish)['swim'] === 'function') {
+    if (typeof (animal as Fish)["swim"] === "function") {
         return true;
     } else {
         return false;
@@ -70,6 +70,6 @@ function swim2(animal: Cat | Fish) {
 let animal: Cat | Fish;
 animal = new Cat();
 console.log(swim2(animal));
-console.log('─────────────────────────────────────');
+console.log("─────────────────────────────────────");
 animal = new Fish();
 console.log(swim2(animal));

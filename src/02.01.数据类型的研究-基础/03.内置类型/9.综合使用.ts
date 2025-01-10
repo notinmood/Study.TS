@@ -17,11 +17,11 @@ export namespace MyNameSpace {
     type FunctionProperties<T> = Pick<T, FunctionPropertyNames<T>>;
 
     interface Part {
-        id: number
-        name: string
-        subParts: Part[]
-        firstFn: (brand: string) => void,
-        anotherFn: (channel: string) => string
+        id: number;
+        name: string;
+        subParts: Part[];
+        firstFn: (brand: string) => void;
+        anotherFn: (channel: string) => string;
     }
 
     type FnCalc = FunctionPropertyCalc<Part>;

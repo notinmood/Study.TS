@@ -24,7 +24,6 @@ export namespace MyNameSpace {
     function doSomething<T>(x: T) {
         type myType = T extends string ? string[] : number[];
 
-
         // TODO:xiedali@2022/4/29 奇怪怎么为其赋值。需要使用 infer？
         // let myName: myType = "ok";
         // let myName: myType = ["value"];

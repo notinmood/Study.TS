@@ -5,7 +5,6 @@ class Student {
     name = "xie ran";
 
     getName(): string {
-        return ("helle,Mr." + this.name);
-    };
+        return "helle,Mr." + this.name;
+    }
 }
-

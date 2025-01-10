@@ -7,8 +7,8 @@
  * @company: HiLand & RainyTop
  */
 
-export let obj = {
-    data: ['hello', 'world'],
+export const obj = {
+    data: ["hello", "world"],
     [Symbol.iterator]() {
         const self = this;
         let index = 0;
@@ -17,17 +17,16 @@ export let obj = {
                 if (index < self.data.length) {
                     return {
                         value: self.data[index++],
-                        done : false
+                        done: false,
                     };
                 } else {
-                    return {value: undefined, done: true};
+                    return { value: undefined, done: true };
                 }
-            }
+            },
         };
-    }
+    },
 };
 
 // TODO:xiedali@2022/4/26 奇怪，为什么 next() 没有向前移动指针？
 console.log(obj[Symbol.iterator]().next()); //{ value:'hello', done:false}
 console.log(obj[Symbol.iterator]().next()); //{ value:'hello', done:false}
-

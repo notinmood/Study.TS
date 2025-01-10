@@ -15,12 +15,12 @@
 
 export namespace MyNameSpace {
     // 删除属性中的只读特性
-    type CreateMutable<Type> = { -readonly [Property in keyof Type]: Type[Property]; };
-    type LockedAccount = { readonly id: string; readonly name: string; };
+    type CreateMutable<Type> = { -readonly [Property in keyof Type]: Type[Property] };
+    type LockedAccount = { readonly id: string; readonly name: string };
     type UnlockedAccount = CreateMutable<LockedAccount>; // {id: string;name: string;}
 
     // 删除属性中的可选特性
-    type Concrete<Type> = { [Property in keyof Type]-?: Type[Property]; };
-    type MaybeUser = { id: string; name?: string; age?: number; };
+    type Concrete<Type> = { [Property in keyof Type]-?: Type[Property] };
+    type MaybeUser = { id: string; name?: string; age?: number };
     type User = Concrete<MaybeUser>; // {id: string; name: string;age: number;}
 }

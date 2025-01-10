@@ -13,9 +13,9 @@ export namespace MyNameSpace {
      * 如果是简单类型,直接声明为 const，就可以保证其值为字面量类型。
      */
     const a = {
-        a: '1',
-        b: '2',
-        c: '3',
+        a: "1",
+        b: "2",
+        c: "3",
     } as const;
 
     type t1<T> = { [K in keyof T]: T[K] };

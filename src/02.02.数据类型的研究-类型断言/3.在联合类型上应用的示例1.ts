@@ -8,7 +8,6 @@
  */
 
 function getLength(something: string | number): number {
-
     /**
      * 无论 something 是数字还是字符串，条件 if(<string>something) 总是成立，
      * 因为 类型断言不是类型转换，不会改变内存上对象的所属类型的情形。
@@ -33,8 +32,6 @@ function getLength(something: string | number): number {
         console.log("NN 2.string 断言不成立！");
         return something.toString().length;
     }
-
-
 }
 
 const result = getLength(123);

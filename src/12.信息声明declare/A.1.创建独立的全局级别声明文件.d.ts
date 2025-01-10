@@ -11,5 +11,3 @@ declare class dClass {
     name: string;
     say: (name) => void;
 }
-
-

@@ -12,10 +12,10 @@ export namespace MyNameSpace {
     // |::说明·| 1. 使用一组有限的字符串字面量作为索引
     // +--------------------------------------------------------------------------
 
-    type Index = 'a' | 'b' | 'c';
+    type Index = "a" | "b" | "c";
     type FromIndex = { [k in Index]?: number };
 
-    const good: FromIndex = {b: 1, c: 2};
+    const good: FromIndex = { b: 1, c: 2 };
 
     // Error:
     // `{ b: 1, c: 2, d: 3 }` 不能分配给 'FromIndex'

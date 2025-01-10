@@ -7,11 +7,10 @@
  * @company: HiLand & RainyTop
  */
 
-
-let notSure: any = 'sisterAn';
+const notSure: any = "sisterAn";
 
 // 类型守卫
-if (typeof notSure === 'string') {
+if (typeof notSure === "string") {
     console.log((notSure as string).toLowerCase());
 }
 
@@ -19,6 +18,6 @@ if (typeof notSure === 'string') {
 // TODO:xiedali@2022/4/30 这个 判定为什么不成立？
 if (notSure instanceof String) {
     console.log(notSure.toLowerCase());
-}else{
+} else {
     console.log("NN- Not String");
 }

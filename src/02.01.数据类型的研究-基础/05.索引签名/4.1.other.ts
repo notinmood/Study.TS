@@ -24,5 +24,5 @@ export namespace MyNameSpace {
          * 因为 [] 通用规则内，含有了 boolean 类型，因此下面定义属性是 ok 的。
          */
         isValid: boolean;
-    }
+    };
 }

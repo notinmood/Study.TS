@@ -10,15 +10,15 @@
  */
 
 import * as blts from "basiclibrary.ts/lib/index";
-import {Bird}    from './_res/Bird';
-import {Human}   from './_res/Human';
-import {IFly}    from './_res/IFly';
-import {ITalk}   from './_res/ITalk';
+import { Bird } from "./_res/Bird";
+import { Human } from "./_res/Human";
+import { IFly } from "./_res/IFly";
+import { ITalk } from "./_res/ITalk";
 
 export namespace MyNameSpace {
     // +--------------------------------------------------------------------------
-// |::说明·| 使用 & 定义数据类型
-// +--------------------------------------------------------------------------
+    // |::说明·| 使用 & 定义数据类型
+    // +--------------------------------------------------------------------------
     /**
      * 通过 type 定义的标的信息，虽然可以看做一个新的数据类型，但他本质是其他既有数据类型的别名。
      */
@@ -32,19 +32,19 @@ export namespace MyNameSpace {
         talk() {
             console.log("I can talk!");
         },
-    }
+    };
 
     some.fly();
     some.talk();
 
-    console.log('。。。这是分隔符。。。');
+    console.log("。。。这是分隔符。。。");
 
     type typeBB = Human & Bird;
     let myName: typeBB;
 
-    let human = new Human();
-    let bird = new Bird();
-    let result = blts.ObjectHelper.combine(human, bird);
+    const human = new Human();
+    const bird = new Bird();
+    const result = blts.ObjectHelper.combine(human, bird);
     myName = result;
 
     myName.display();

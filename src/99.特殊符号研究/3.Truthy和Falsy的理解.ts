@@ -18,18 +18,14 @@
 // +--------------------------------------------------------------------------
 
 // 以下三项都对 truthy
-let fn = () => {
-}
-let obj = {}
-let arr: never[] = []
+const fn = () => {};
+const obj = {};
+const arr: never[] = [];
 
-console.log(!fn)  // false
-console.log(!obj) // false
-console.log(!arr) // false
+console.log(!fn); // false
+console.log(!obj); // false
+console.log(!arr); // false
 
-console.log(!!fn)  // true
-console.log(!!obj) // true
-console.log(!!arr) // true
-
-
-
+console.log(!!fn); // true
+console.log(!!obj); // true
+console.log(!!arr); // true
