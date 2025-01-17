@@ -9,11 +9,13 @@
         "axios": "1.6.0",
         "basiclibrary.ts": "^1.0.9",
         "jquery": "^3.6.0",
+        "lodash": "^4.17.21",
         "ts-node": "^10.7.0"
     },
     "devDependencies": {
         "@types/axios": "^0.14.0",
         "@types/jquery": "^3.5.14",
+        "@types/lodash": "^4.17.14",
         "@typescript-eslint/eslint-plugin": "^7.9.0",
         "@typescript-eslint/parser": "^7.9.0",
         "chai": "^4.3.6",
