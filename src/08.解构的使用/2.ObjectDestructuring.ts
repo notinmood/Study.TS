@@ -7,18 +7,21 @@
  * @company: HiLand & RainyTop
  */
 
+export default {
+    title: "对象的解构",
+};
+
 const o = {
     a: "foo",
     b: 12,
     c: "bar",
 };
 
-// @ts-ignore
-let { a, b } = o; //从o中解构出a,b
+const { a, b } = o; //从o中解构出a,b
 console.log(a);
 console.log(b);
 
-//@ts-expect-error
-let { a, ...rest2 } = o;
-console.log(a);
+// 解构时可以用别名
+const { a: aa, ...rest2 } = o;
+console.log(aa);
 console.log(rest2);

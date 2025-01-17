@@ -6,6 +6,9 @@
  * @creator: ShanDong Xiedali
  * @company: HiLand & RainyTop
  */
+export default {
+    title: "数组的结构",
+};
 
 const arrayValue = [1, 2, 3];
 //1. 1vs.1解构。此时我们将 arrayValue 拆成（解构成）三个值，每个值都有对应的值
