@@ -19,9 +19,9 @@
 4. 项目根目录下的文件`.node-version`是配合node版本管理工具`fnm`使用的，其内容可以根据自己的 Node.js 版本进行修改。
 
 ## 项目说明
-1. 项目基于 TypeScript 4.5.4 版本开发，使用 pnpm 作为包管理工具。
+1. 项目基于 TypeScript 最新版本开发，使用 pnpm 作为包管理工具。
 2. 项目使用 WebStorm 作为开发环境，并启用了一些项目级的配置工具，如 ESLint、Prettier 等。
-3. 项目使用 npm scripts 作为项目的构建工具，并提供了一些常用的命令，如 `npm run dev` 启动开发环境，`npm run build` 编译项目。
+3. 项目使用 pnpm scripts 作为项目的构建工具，并提供了一些常用的命令，如 `npm run dev` 启动开发环境，`npm run build` 编译项目。
 4. 项目提供了一些常用的 TypeScript 语法示例，如类型注解、接口、泛型、枚举、装饰器等。
 5. 项目提供了一些常用的 TypeScript 库的使用示例，如 lodash、axios、moment 等。
 6. 项目提供了一些常用的 TypeScript 工具的使用示例，如 ts-node、ts-jest 等。
@@ -35,7 +35,7 @@
 ## 安装和更新 Hiland 的企业类库
 
 ```shell
-npm i basiclibrary.ts
+pnpm i basiclibrary.ts
 ```
 
 ## 其他说明
