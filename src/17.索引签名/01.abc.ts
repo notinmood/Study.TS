@@ -8,7 +8,7 @@
  */
 
 //使用索引签名`{ [key: string]: string }`来定义一个key和value都是string的字面量对象
-const languages: { [key: string]: string } = {
+const languages: { [index: string]: string } = {
     en: "English",
     fr: "French",
     es: "Spanish",

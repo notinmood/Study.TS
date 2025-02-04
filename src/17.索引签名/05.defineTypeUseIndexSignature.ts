@@ -7,6 +7,10 @@
  * @company: HiLand & RainyTop
  */
 
+export default {
+    title: "用索引签名定义类型",
+};
+
 // 索引签名的定义：
 type Product = {
     name: string;
