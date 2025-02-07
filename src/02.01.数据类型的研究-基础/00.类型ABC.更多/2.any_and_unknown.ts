@@ -16,7 +16,8 @@
  */
 
 export default {
-    name: "2.any和unknown",
+    name: "2.超级类型any和unknown",
+    describe: "any 和 unknown 都是超级类型，其他所有的类型实例都可以赋值给这两个类型标识出的变量；",
 };
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any

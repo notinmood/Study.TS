@@ -9,6 +9,4 @@
 
 export default {
     title: "03.Other",
-    description: "其他类型",
-    path: "/03.Other",
 };
