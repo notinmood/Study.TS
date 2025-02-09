@@ -3,18 +3,28 @@
  * 对数组中的各个元素分别进行操作,最后将结果"减少"到一个数值.
  */
 
-let arr = [1, 2, 3, 4];
-let r1 = arr.reduce((p, c, i, t) => {
+export default {
+    name: "reduce",
+    description:
+        "reduce 是一个高阶函数,它接受一个函数作为参数,这个函数接受四个参数:前一个元素的结果,当前元素,当前元素的索引,整个数组.reduce 会对数组中的元素进行累计,最后返回一个单一的结果.",
+};
+
+const arr = [1, 2, 3, 4];
+
+// 1. 没有初始值的情况
+const resultWithoutInitial = arr.reduce((p, c, i, t) => {
     console.log(`第：${i}次循环时，上一次（或初始）的结果为：${p};当前值为:${c};对应数组为:${t}`);
     return p + c;
 });
-console.log(`最后的计算结果为:${r1}`)
-console.log("————————————————")
-let r2 = arr.reduce((p, c, i, t) => {
+console.log(`最后的计算结果为:${resultWithoutInitial}`);
+console.log("————————————————");
+
+// 2. 有初始值的情况
+const resultWithInitial = arr.reduce((p, c, i, t) => {
     console.log(`第：${i}次循环时，上一次（或初始）的结果为：${p};当前值为:${c};对应数组为:${t}`);
     return p + c;
-}, 0)
-console.log(`最后的计算结果为:${r2}`)
+}, 0);
+console.log(`最后的计算结果为:${resultWithInitial}`);
 
 //output---------------------------
 // 第：1次循环时，上一次（或初始）的结果为：1;当前值为:2;对应数组为:1,2,3,4
@@ -27,5 +37,3 @@ console.log(`最后的计算结果为:${r2}`)
 // 第：2次循环时，上一次（或初始）的结果为：3;当前值为:3;对应数组为:1,2,3,4
 // 第：3次循环时，上一次（或初始）的结果为：6;当前值为:4;对应数组为:1,2,3,4
 // 最后的计算结果为:10
-
-

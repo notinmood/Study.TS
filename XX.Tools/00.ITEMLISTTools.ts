@@ -73,7 +73,7 @@ function processDirectory(dirPath: string): void {
     if (items.length > 0) {
         let markdownContent = items
             .map((item) => {
-                return `- [${item.exportInfo.nameOrTitle}](./${item.filePath}) - ${item.exportInfo.descriptionOrDescribe}`;
+                return `- [${item.exportInfo.nameOrTitle}](${item.filePath}) - ${item.exportInfo.descriptionOrDescribe}`;
             })
             .join("\n");
 

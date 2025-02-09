@@ -6,7 +6,10 @@
  * @Description  :
  * Copyright (c) 2024 by Hiland & RainyTop, All Rights Reserved.
  */
-export {};
+export default {
+    name: "map的使用的示例",
+    description: "map() 方法创建一个新数组，其结果是该数组中的每个元素都调用一个提供的函数后返回的结果。",
+};
 
 const date = new Date();
 const year = date.getFullYear();
@@ -16,7 +19,7 @@ const hour = date.getHours();
 const minute = date.getMinutes();
 const second = date.getSeconds();
 
-const formatNumber = (n: number) => {
+const formatNumber = (n: number): string => {
     const s = n.toString();
     return s[1] ? s : "0" + s;
 };
