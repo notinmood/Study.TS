@@ -27,5 +27,7 @@ module.exports = {
         sourceType: "module",
     },
     plugins: ["@typescript-eslint", "vue", "prettier"],
-    rules: {},
+    rules: {
+        "linebreak-style": ["off", "windows"], // 不检测换行符是LF还是CRLF
+    },
 };
