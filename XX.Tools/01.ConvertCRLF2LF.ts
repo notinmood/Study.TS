@@ -55,5 +55,5 @@ function processDirectory(dirPath: string): void {
 }
 
 // 启动脚本
-const targetDirectory = "D:\\HOME\\MySpace\\Study.TS\\src"; // 替换为目标目录的路径
+const targetDirectory = "../src"; // 替换为目标目录的路径
 processDirectory(targetDirectory);
