@@ -13,7 +13,8 @@ export default {
 };
 
 // 使用实例(map、filter、 debounce防抖等工具类)
-import { map, filter, debounce } from "lodash-es";
+import { map, filter, debounce, isEmpty } from "lodash-es";
+
 const numbers = [1, 2, 3, 4, 5];
 
 // map方法
@@ -30,3 +31,14 @@ const debouncedFunc = debounce(() => {
 }, 2000);
 
 debouncedFunc(); // 2秒后打印"debouncedFunc"
+
+// isEmpty方法
+const obj = { a: 1, b: 2 };
+const arr = [1, 2, 3];
+console.log(isEmpty(obj)); // false
+console.log(isEmpty(arr)); // false
+console.log(isEmpty({})); // true
+console.log(isEmpty([])); // true
+console.log(isEmpty(null)); // true
+console.log(isEmpty(undefined)); // true
+console.log(isEmpty("")); // true
