@@ -1,5 +1,5 @@
 /**
- * @file   : 1.ts
+ * @file   : 00.ITEMLISTTools.ts
  * @time   : 11:07
  * @date   : 2025/2/7
  * @mail   : 9727005@qq.com
@@ -107,7 +107,7 @@ async function main(targetDir: string) {
 }
 
 // 启动主函数，传入目标目录
-const targetDirectory = "D:\\HOME\\MySpace\\Study.TS\\src";
+const targetDirectory = "../src";
 main(targetDirectory).then(() => {
     console.log("处理完成时间：", new Date().toLocaleString());
 });

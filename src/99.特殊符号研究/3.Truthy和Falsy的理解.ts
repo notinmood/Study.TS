@@ -7,10 +7,6 @@
  * @company: HiLand & RainyTop
  */
 
-/**
-
- */
-
 // +--------------------------------------------------------------------------
 // |::说明·| Truthy 是指转换后为‘真’的值;
 // |::一一·| Falsy  是指转换后为‘假’的值。
@@ -29,3 +25,4 @@ console.log(!arr); // false
 console.log(!!fn); // true
 console.log(!!obj); // true
 console.log(!!arr); // true
+console.log("--");
