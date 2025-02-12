@@ -6,6 +6,10 @@
  * @creator: ShanDong Xiedali
  * @company: HiLand & RainyTop
  */
+export default {
+    name: "3.Truthy和Falsy的理解",
+    description: "Truthy 和 Falsy 的概念，以及它们的区别和应用。",
+};
 
 // +--------------------------------------------------------------------------
 // |::说明·| Truthy 是指转换后为‘真’的值;

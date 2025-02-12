@@ -6,6 +6,10 @@
  * @creator: ShanDong Xiedali
  * @company: HiLand & RainyTop
  */
+export default {
+    name: "2.连续两个!!进行取反",
+    description: "连续两个!!进行取反",
+};
 
 // +--------------------------------------------------------------------------
 // |::说明·| 两个!，就是取反再取反，而得的正向的布尔结果：
@@ -36,4 +40,4 @@ const temp_no = "";
 console.log(isExistNormal(temp_no));
 console.log(isExistEffective(temp_no));
 
-console.log("ok!");
+console.log("ok!!!");
