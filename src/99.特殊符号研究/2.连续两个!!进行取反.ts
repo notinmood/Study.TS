@@ -40,4 +40,4 @@ const temp_no = "";
 console.log(isExistNormal(temp_no));
 console.log(isExistEffective(temp_no));
 
-console.log("ok!!!");
+console.log("ok!!");
