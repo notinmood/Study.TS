@@ -34,4 +34,4 @@ myFunc(null);
 
 myFunc2(undefined);
 // myFunc2(null);
-console.log("─");
+console.log("--");

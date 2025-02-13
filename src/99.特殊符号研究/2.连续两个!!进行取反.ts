@@ -32,12 +32,12 @@ function isExistEffective(something: string) {
     return !!something;
 }
 
+// 1. 判断字符串存在
 const temp_has = "value";
-console.log(isExistNormal(temp_has));
-console.log(isExistEffective(temp_has));
+console.log(isExistNormal(temp_has)); // true
+console.log(isExistEffective(temp_has)); //true
 
+// 2. 判断字符串不存在
 const temp_no = "";
-console.log(isExistNormal(temp_no));
-console.log(isExistEffective(temp_no));
-
-console.log("ok!!");
+console.log(isExistNormal(temp_no)); //false
+console.log(isExistEffective(temp_no)); //false
