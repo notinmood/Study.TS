@@ -19,10 +19,9 @@ export default {
 
 /**
  * 使用方式：
- * Record类型接受两个参数，第一个参数是属性的名称，第二个参数是属性的类型。
+ * Record类型接受两个参数，第一个参数是属性的名称（用联合字符串表示），第二个参数是属性的类型。
  * 这里，我们用"name" | "age" | "address"来表示属性的名称，用string | number来表示属性的类型。
  */
-
 const personRecord: Record<"name" | "age" | "address", string | number> = {
     name: "Alice",
     age: 25,

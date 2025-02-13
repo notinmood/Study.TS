@@ -8,6 +8,6 @@
  */
 
 export default {
-    name: "07.Record类型的更多用法",
+    name: "08.Record类型的更多用法",
     description: "Record类型的更多用法说明",
 };

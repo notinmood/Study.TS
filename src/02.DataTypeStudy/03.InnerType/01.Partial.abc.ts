@@ -15,7 +15,7 @@ export default {
 };
 
 /**
- * 类型 Human 里面的部分成员，即 Partial<Human>。
+ * Partial<Human>的意思是将 Human 的部分成员提取出来，成为一个新的类型。
  * Partial 就是部分的意思，以下代码就是只使用类型 Human 里面的部分成员。
  * 其实这句话更重要的是要说，新类型的成员不能比 Human 的成员多，只能是他的子集。
  */
