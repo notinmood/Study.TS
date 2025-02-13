@@ -95,7 +95,7 @@ async function main(targetDir: string) {
     try {
         // 确保目标目录存在
         if (!fs.existsSync(targetDir)) {
-            throw new Error(`目录 ${targetDir} 不存在，请检查路径。`);
+            throw new Error(`目录 ${targetDir} 不存在，请检查路径！`);
         }
 
         console.log(`》》》正在处理目录：${targetDir}`);
