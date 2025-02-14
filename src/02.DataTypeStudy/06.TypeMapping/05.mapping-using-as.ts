@@ -7,6 +7,11 @@
  * @company: HiLand & RainyTop
  */
 
+export default {
+    name: "05.通过 as 实现键名重新映射",
+    description: "通过 as 关键字，可以为对象属性重新定义键名。",
+};
+
 export namespace MyNameSpace {
     // 语法
     // type MappedTypeWithNewProperties<Type> = { [Properties in keyof Type as NewKeyType]: Type[Properties] }

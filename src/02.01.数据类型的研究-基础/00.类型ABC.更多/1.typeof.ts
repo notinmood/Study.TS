@@ -10,7 +10,8 @@
 import { Worker } from "../../00.res/Worker";
 
 export default {
-    name: "typeof的使用",
+    name: "1.typeof的使用",
+    describe: "typeof的作用是获取一个变量的类型",
 };
 
 // eslint-disable-next-line

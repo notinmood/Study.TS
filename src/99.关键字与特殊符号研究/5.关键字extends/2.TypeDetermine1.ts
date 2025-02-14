@@ -11,7 +11,7 @@ import { Human } from "../../00.res/Human";
 import { Worker } from "../../00.res/Worker";
 
 export default {
-    name: "2.extends用于类型关系判断",
+    name: "2.【条件类型】extends用于类型关系判断",
     description: "使用extends做最基本的类型兼容性判断",
 };
 
