@@ -13,12 +13,17 @@ export default {
 };
 
 // // 类型兼容性判断通常结合泛型一起使用
-// function doSomething<T>(x: T) {
-//     type myType = T extends string ? string[] : number[];
-//
-//     // TODO:xiedali@2022/4/29 奇怪怎么为其赋值。需要使用 infer？
-//     // let myName: myType = "ok";
-//     // let myName: myType = ["value"];
-// }
-//
-// const myName = doSomething("qingdao");
+interface Animal {
+    name: string;
+    age: number;
+
+    run(): void;
+    eat(food: string): void;
+}
+
+// 将接口中所有的方法提取出来。其中 (...args: any[]) => any 代表任意参数和任意返回值的函数类型。
+/* eslint-disable-next-line */
+type methodNames<T> = { [K in keyof T]: T[K] extends (...args: any[]) => any ? K : never }[keyof T];
+
+/* eslint-disable */
+type AnimalMethodNames = methodNames<Animal>; // "run" | "eat"

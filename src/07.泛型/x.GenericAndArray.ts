@@ -6,8 +6,14 @@
  * @creator: ShanDong Xiedali
  * @company: HiLand & RainyTop
  */
+export default {
+    name: "x.传统数组和泛型数组",
+    description: "两种创建数组的方式都可以实现相同的功能，但是使用泛型可以让代码更加简洁、易读。",
+};
 
-// 传统数组和泛型数组。两者是等价的，定义方式和使用方式都一样。但是泛型数组更加灵活，可以指定元素的类型。
+/**
+ * 传统数组和泛型数组。两者是等价的，定义方式和使用方式都一样。但是泛型数组更加灵活，可以指定元素的类型。
+ */
 
 // 1. 使用泛型的Array<T>
 const arr1: Array<number> = [1, 2, 3];

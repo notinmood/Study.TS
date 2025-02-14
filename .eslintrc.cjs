@@ -28,6 +28,6 @@ module.exports = {
     },
     plugins: ["@typescript-eslint", "vue", "prettier"],
     rules: {
-        "linebreak-style": ["off", "windows"], // 不检测换行符是LF还是CRLF
+        "linebreak-style": "off", // 不检测换行符是LF还是CRLF
     },
 };

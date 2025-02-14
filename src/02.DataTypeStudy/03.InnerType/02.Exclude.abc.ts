@@ -8,7 +8,7 @@
  */
 
 export default {
-    title: "2.1.Exclude的使用",
+    title: "2.Exclude的使用",
     description: "Exclude的使用",
 };
 
