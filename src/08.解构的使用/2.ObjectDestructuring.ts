@@ -18,10 +18,10 @@ const o = {
 };
 
 const { a, b } = o; //从o中解构出a,b
-console.log(a);
-console.log(b);
+console.log(a); // "foo"
+console.log(b); // 12
 
 // 解构时可以用别名
 const { a: aa, ...rest2 } = o;
-console.log(aa);
-console.log(rest2);
+console.log(aa); // "foo"
+console.log(rest2); // { b: 12, c: "bar" }

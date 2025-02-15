@@ -12,5 +12,8 @@
 // +--------------------------------------------------------------------------
 
 // @formatter:off
+/* eslint-disable-next-line */
 let a =   123;
 // @formatter:on
+
+console.log(a);

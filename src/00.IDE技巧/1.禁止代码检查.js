@@ -10,5 +10,5 @@
 // |::说明·| 临时禁止代码规范检查
 // +--------------------------------------------------------------------------
 
-// noinspection all
-console.log(isReferenceType(new Number(123)));
+// noinspection al
+console.log(doSomething(new Number(123)));

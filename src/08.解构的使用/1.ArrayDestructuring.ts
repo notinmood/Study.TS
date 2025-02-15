@@ -19,5 +19,5 @@ console.log(third); //3
 
 //2. 使用剩余参数进行解构
 const [one, ...rest] = arrayValue;
-console.log(one);
-console.log(rest);
+console.log(one); //1
+console.log(rest); //[2, 3]

@@ -7,7 +7,10 @@
  * @company: HiLand & RainyTop
  */
 
-export default {};
+export default {
+    name: "3.函数参数的解构",
+    description: "函数参数的解构",
+};
 
 //定义一个数据类型 MyType，它是一个对象，里面的 a 为 string 类型，里面的 b 是一个可选值，为 number 类型
 type MyType = { a: string; b?: number };
@@ -19,4 +22,4 @@ function myFunc({ a, b }: MyType): void {
 }
 
 const p: MyType = { a: "qingdao", b: 2009 };
-myFunc(p);
+myFunc(p); //输出 "qingdao" 2009
