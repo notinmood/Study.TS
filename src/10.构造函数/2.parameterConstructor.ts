@@ -6,6 +6,10 @@
  * @creator: ShanDong Xiedali
  * @company: HiLand & RainyTop
  */
+export default {
+    name: "2.带参数的构造函数（给参数设置访问限定符private）",
+    description: "构造函数的参数使用private限定后，这参数属性会成为一个私有成员",
+};
 
 // +--------------------------------------------------------------------------
 // |::说明·| 2.构造函数内赋值以及类型的属性可以省略

@@ -46,7 +46,6 @@ function getExportInfo(content: string): ExportInfo | null {
 // 遍历目录并处理文件，生成 00.ItemList.md
 function processDirectory(dirPath: string): void {
     const items: Array<{ filePath: string; exportInfo: ExportInfo }> = [];
-    const subDirectories: string[] = [];
 
     const dirItems = fs.readdirSync(dirPath);
     for (const item of dirItems) {
@@ -56,7 +55,6 @@ function processDirectory(dirPath: string): void {
         if (stat.isDirectory()) {
             // 递归处理子目录
             processDirectory(itemPath);
-            subDirectories.push(itemPath);
         } else if (stat.isFile() && item.endsWith(".ts")) {
             const content = fs.readFileSync(itemPath, "utf8");
             const exportInfo = getExportInfo(content);
@@ -82,11 +80,6 @@ function processDirectory(dirPath: string): void {
         markdownContent = `# 目录\n\n${markdownContent}`;
         fs.writeFileSync(outFilePath, markdownContent, "utf8");
         console.log(`已生成 ${outFilePath}`);
-    }
-
-    // 处理子目录
-    for (const subDir of subDirectories) {
-        processDirectory(subDir);
     }
 }
 

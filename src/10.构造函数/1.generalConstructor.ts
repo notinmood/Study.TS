@@ -6,6 +6,10 @@
  * @creator: ShanDong Xiedali
  * @company: HiLand & RainyTop
  */
+export default {
+    name: "1.generalConstructor",
+    description: "普通构造函数",
+};
 
 export class Foo {
     private readonly name: string;
