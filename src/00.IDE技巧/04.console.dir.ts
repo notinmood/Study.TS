@@ -9,17 +9,28 @@
 
 export default {
     name: "02.console.dir",
-    description: "使用console.dir()打印复杂对象",
+    description:
+        "在node.js中使用console.dir()和console.log()效果相同，但在web浏览器中，console.dir()可以打印出对象的所有属性和方法。",
 };
 
-//TODO:xiedali@2025/02/16 需要换成复杂对象
-import { Human } from "../00.res/Human";
+// 1. 简单类型
+console.log("hello world");
+console.dir("hello world");
 
+// 2. 复杂类型
+console.log(Math.PI);
+console.dir(Math.PI);
+
+console.log(Promise);
+console.dir(Promise);
+
+// 3. 自定义类型
+import { Human } from "../00.res/Human";
 const john = new Human();
 john.name = "John";
 
 console.log(john);
-console.log(Human);
-
 console.dir(john);
+
+console.log(Human);
 console.dir(Human);
