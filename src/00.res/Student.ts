@@ -9,6 +9,11 @@
 import { Human } from "./Human";
 
 export class Student extends Human {
+    constructor(name: string) {
+        super();
+        this.name = name;
+    }
+
     study(): void {
         console.log("我是一个学生，我正在读书。");
     }

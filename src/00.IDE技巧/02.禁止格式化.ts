@@ -7,13 +7,18 @@
  * @company: HiLand & RainyTop
  */
 
+export default {
+    name: "02.禁止格式化",
+    description: "临时禁止 IDE 对某段代码的格式化处理。",
+};
+
 // +--------------------------------------------------------------------------
 // |::说明·| 临时禁止 IDE 对某段代码的格式化处理。
 // +--------------------------------------------------------------------------
 
 // @formatter:off
 /* eslint-disable-next-line */
-let a =   123;
+let someAA =   123;
 // @formatter:on
 
-console.log(a);
+console.log(someAA);
