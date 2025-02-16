@@ -19,7 +19,7 @@ function Student(name, age, grade) {
 
 // 设置原型链的方式1（推荐）
 Student.prototype = Object.create(Person.prototype);
-Student.prototype.constructor = Student;
+// Student.prototype.constructor = Student;
 
 //// 设置原型链的方式2（现在不推荐）
 // Student.prototype = new Person();
@@ -46,4 +46,7 @@ console.log(Student.prototype.constructor.toString());
 
 let tom = new Student("Tom", 18, 3);
 tom.sayName();
+console.log(tom.name);
+console.log(tom.age);
+console.log(tom.grade);
 console.log(tom);
