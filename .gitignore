@@ -1,2 +1,4 @@
 /lib
 /node_modules
+/src/30.IO/00.res/hello-async.txt
+/src/30.IO/00.res/hello-sync.txt
