@@ -27,13 +27,17 @@ function pathExistSync2(path: string): boolean {
     }
 }
 
+//判断文件是否存在
 console.log(pathExistSync1("../00.res/data.txt")); // true
 console.log(pathExistSync1("../00.res/data-x.txt")); // false
+//判断目录是否存在
 console.log(pathExistSync1("../00.res/")); // true
 console.log(pathExistSync1("../00.res/data-x/")); // false
 
+//判断文件是否存在
 console.log(pathExistSync2("../00.res/data.txt")); // true
 console.log(pathExistSync2("../00.res/data-x.txt")); // false
+//判断目录是否存在
 console.log(pathExistSync2("../00.res/")); // true
 console.log(pathExistSync2("../00.res/data-x/")); // false
 
