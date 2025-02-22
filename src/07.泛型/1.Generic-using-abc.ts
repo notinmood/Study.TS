@@ -6,6 +6,10 @@
  * @creator: ShanDong Xiedali
  * @company: HiLand & RainyTop
  */
+export default {
+    name: "1.入门",
+    description: "TypeScript 泛型的基本使用",
+};
 
 // +--------------------------------------------------------------------------
 // |::说明·| 泛型数组 Array<Number> 和 Number[] 是等效的。

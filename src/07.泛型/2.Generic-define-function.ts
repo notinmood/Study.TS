@@ -1,3 +1,5 @@
+import { intersection } from "lodash-es";
+
 /**
  * @file   : 2.泛型函数.ts
  * @time   : 20:29
@@ -6,6 +8,11 @@
  * @creator: ShanDong Xiedali
  * @company: HiLand & RainyTop
  */
+export default {
+    name: "2.泛型函数的定义方式",
+    description: "泛型函数的定义方式",
+};
+
 // +--------------------------------------------------------------------------
 // |::说明·| 注意以下4种方式定义函数的时候，参数的泛型和函数返回值的泛型表达方式
 // +--------------------------------------------------------------------------
@@ -26,10 +33,10 @@ const returnArgD: <T>(arg: T) => T = (arg) => {
     return arg;
 };
 
-const _a = returnArgA("qingdao");
-const _b = returnArgB(123);
-const _c = returnArgC(true);
-const _d = returnArgD("123");
+const _a = returnArgA("qingdao"); // 注意这里的泛型参数T，是隐式推断出来的（即：arg: string）。
+const _b = returnArgB(123); // 注意这里的泛型参数T，是隐式推断出来的（即：arg: number）。
+const _c = returnArgC(true); // 注意这里的泛型参数T，是隐式推断出来的（即：arg: boolean）。
+const _d = returnArgD<string>("123"); // 注意这里的泛型参数<string>，是明确指定出来的。
 
 console.log(_a);
 console.log(_b);
