@@ -31,4 +31,5 @@ function greet<T extends Person>(user: T): string {
 }
 
 const user: Person = { name: "Alice", age: 28 };
-console.log(greet(user));
+console.log(greet<Person>(user));
+console.log(greet(user)); // 调用时泛型类型参数可以省略，因为它可以推断出是Person类型

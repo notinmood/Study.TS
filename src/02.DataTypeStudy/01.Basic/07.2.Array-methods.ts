@@ -7,7 +7,7 @@
  * @company: Less is more.Simple is best!
  */
 export default {
-    name: "07.数组的各种方法",
+    name: "07.2.数组的各种方法",
     description: "数组的一些常用方法",
 };
 

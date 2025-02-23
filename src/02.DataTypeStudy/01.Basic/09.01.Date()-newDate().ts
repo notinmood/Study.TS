@@ -8,15 +8,10 @@
  */
 
 export default {
-    name: "03.Date()-new Date()辨析",
-    description: "Date()与new Date()的区别",
+    name: "09.01. Date()与new Date()的区别",
+    description:
+        "Date()是全局函数，可以直接调用，返回一个表示的日期和时间的字符串对象。new Date()是构造函数，需要通过new关键字调用，返回一个Date对象。",
 };
-
-/**
- * Date()与new Date()的区别
- * Date()是全局函数，可以直接调用，返回一个表示的日期和时间的字符串对象。
- * new Date()是构造函数，需要通过new关键字调用，返回一个Date对象。
- */
 
 const dateA: string = Date();
 const dateB: Date = new Date();
@@ -41,6 +36,9 @@ console.log(dateB.toLocaleString()); //2025/2/15 17:02:05
 console.log(dateB.toString()); //Sat Feb 15 2025 17:02:05 GMT+0800 (中国标准时间)
 
 // 注意：Date()函数返回的字符串格式为"YYYY-MM-DDTHH:mm:ss.sssZ"，其中"T"表示日期和时间之间的分隔符，"Z"表示时区。
+
+//使用valueOf()方法获取Date对象的原始值：
+console.log(dateB.valueOf()); // 1613390254118 (与getTime()方法返回的结果相同)
 
 //更多不同的说明：
 

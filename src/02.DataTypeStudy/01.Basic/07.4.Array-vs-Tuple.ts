@@ -6,6 +6,10 @@
  * @creator: ShanDong Xiedali
  * @company: Less is more.Simple is best!
  */
+export default {
+    name: "07.4.数组和元组对比",
+    description: "数组和元组的区别",
+};
 
 // 数组和元组的区别
 

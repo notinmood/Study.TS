@@ -88,12 +88,12 @@ async function main(targetDir: string) {
     try {
         // 确保目标目录存在
         if (!fs.existsSync(targetDir)) {
-            throw new Error(`目录 ${targetDir} 不存在，请检查路径！`);
+            console.log(`❌目录 ${targetDir} 不存在，请检查路径！`);
         }
 
         console.log(`》》》正在处理目录：${targetDir}`);
         processDirectory(targetDir);
-        console.log("》》》处理完成。");
+        console.log("✅✅✅处理完成。");
     } catch (error) {
         console.error("处理过程中发生错误：", error);
     }
