@@ -12,8 +12,8 @@ importers:
         specifier: 1.6.0
         version: 1.6.0
       basiclibrary.ts:
-        specifier: ^1.2.9
-        version: 1.2.9
+        specifier: ^1.2.10
+        version: 1.2.10
       jquery:
         specifier: ^3.7.1
         version: 3.7.1
@@ -311,8 +311,8 @@ packages:
   balanced-match@1.0.2:
     resolution: {integrity: sha512-3oSeUO0TMV67hN1AmbXsK4yaqU7tjiHlbxRDZOpH0KW9+CeX4bRAaX0Anxt0tx2MrpRpWwQaPwIlISEJhYU5Pw==}
 
-  basiclibrary.ts@1.2.9:
-    resolution: {integrity: sha512-rs/75FjR2tS6KLuGZOL9p4p+rHEheiiB3zvco07MhCkoQJ1jfAQBajyJm3PsYIyOI4GFpocTWnB8iSWA25YyfQ==}
+  basiclibrary.ts@1.2.10:
+    resolution: {integrity: sha512-w3ZVQUauu34izXKN4FZECkaL56p6o4NZXv2WlTvrfIibXAlIMQ59/fhAeIfRCzoPgtnV1exDXIDRA7nmqcS1bg==}
 
   binary-extensions@2.3.0:
     resolution: {integrity: sha512-Ceh+7ox5qe7LJuLHoY0feh3pHuUDHAcRUeyL2VYghZwfpkNIy/+8Ocg0a3UuSoYzavmylwuLWQOf3hl0jjMMIw==}
@@ -1737,7 +1737,7 @@ snapshots:
 
   balanced-match@1.0.2: {}
 
-  basiclibrary.ts@1.2.9: {}
+  basiclibrary.ts@1.2.10: {}
 
   binary-extensions@2.3.0: {}
 

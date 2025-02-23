@@ -8,7 +8,7 @@
  */
 export default {
     name: "09.05.Array()-newArray()",
-    description: "",
+    description: "Array()和newArray()两者没有区别",
 };
 
 import { ArrayHelper } from "BasicLibrary.ts/lib/data/arrayHelper";
